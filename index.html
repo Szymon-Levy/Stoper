@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="project1.css">
+</head>
+<body>
+  
+  <div class="stopwatch-container">
+    <p class="small-title">Stoper</p>
+    <h1>Kliknij "Play", aby zacząć</h1>
+
+    <div class="counter">
+      <div class="numbers">
+        <div class="number-wrapper days">
+          <span class="number">0</span> 
+          <span class="text">dni</span>
+        </div>
+        <span class="char">:</span>
+
+        <div class="number-wrapper hours">
+          <span class="number">0</span>
+          <span class="text">godziny</span>
+        </div>
+        <span class="char">:</span>
+
+        <div class="number-wrapper minutes">
+          <span class="number">0</span>
+          <span class="text">minuty</span>
+        </div>
+        <span class="char">:</span>
+
+        <div class="number-wrapper seconds">
+          <span class="number">0</span>
+          <span class="text">sekundy</span>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button class="play-button"><i class="ri-play-line"></i></button>
+        <button class="save-button"><i class="ri-save-2-fill"></i></button>
+        <button class="reset-button"><i class="ri-history-line"></i></button>
+      </div>
+    </div>
+
+    <div id="saved-time" class="saved-time">
+      <div id="close-saved-time" class="close-saved-time"><i class="ri-delete-bin-2-line"></i></div>
+      <h5>Zapisane wyniki:</h5>
+      <ul id="saved-time-container" class="saved-time-container"></ul>
+    </div>
+  </div>
+
+  <script src="project1.js"></script>
+
+</body>
+</html>
